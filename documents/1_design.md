@@ -29,8 +29,8 @@
 
 ## Multiple Virtual Warehouses
 - Warehouses do not compete for resources, and have access to all available databases
-- In a multi-clustered (enabled) warehouse, Snowflake automatically provisions new clusters to the same warehouse.
-    - New warehouses do not change
+- In a multi-clustered (enabled) warehouse, Snowflake automatically provisions new clusters to the same warehouse
+    - New warehouses do not increase in size or compute power (essentials)
     - Increases concurrecy, not performance
 
 # Tables
@@ -77,7 +77,7 @@
 
 > **Warning**  
 > The only contraint that is enforced is `Not Null`  
-> The other constraints allow you to document your schema in the way it is supposed to be interpreted, but will not be enforcede by Snowflake
+> The other constraints allow you to document your schema in the way it is supposed to be interpreted, but will not be enforced by Snowflake
 
 ## Supported Date Types:
 - Numeric:
@@ -105,20 +105,21 @@
 
 ## Views
 - Normal
-    - Similar to traditional relational databases where you specify view code, create it, and on query execution, the view is expanded into the query that is being executed, and results are returned
+    - Similar to traditional relational databases where you specify view code, create it, and on query execution, the view is expanded into the query that is being executed, and the results are returned
 - Secure
     - Allows the view you are using to be protected and the data returned will not be leaked to the person querying the data
     - Snowflake will not expand the top query, but will instead get the results and then apply the top query
 - Materialized **(Enterprise Feature)**
     - Snowflake saves results permanently and keeps records updated if the underlying data changes
 
-## Code Modules Support
-- User-defined functions
-- External functions
-- Stored procedures
+# Code Module Support
+- [User-defined functions](https://docs.snowflake.com/en/sql-reference/user-defined-functions)
+- [External functions](https://docs.snowflake.com/en/sql-reference/external-functions)
+- [Stored procedures](https://docs.snowflake.com/en/sql-reference/stored-procedures)
 
 > **Note**  
 > Modules can be coded in SQL or JavaScript
 
 # Definitions:
 - Predicate: Expression that evaluates to true, false, or unknown
+- Views: A query generated table, that is also queryable
