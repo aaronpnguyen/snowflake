@@ -64,7 +64,7 @@
             - Google cloud storage
     
 > **Note**  
-> The contents of internal stages are considered active data, meaning they will have a direct impact on storage billing
+> The contents of internal stages are considered active data, meaning they **will** have a direct impact on storage billing
 
 ## Import Process
 1. Select a stage to copy the file(s) into
