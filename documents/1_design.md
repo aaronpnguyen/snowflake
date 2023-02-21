@@ -5,7 +5,7 @@
 - Decoupled compute and storage
     - Can scale one without affecting the other
 - Tight integration with cloud storage
-    - Can move snowflake from one provider to another by just changing cloud storage address
+    - Can move Snowflake integration from one provider to another by changing cloud storage address
 
 ## Virtual Warehouse
 - Automatic Operation

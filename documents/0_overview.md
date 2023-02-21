@@ -83,7 +83,7 @@
 
 # Definitions:
 - Active Data: Data that is active until it is changed
-- Fail-Safe: Expired data from time-travel is automatically moved here after expiration
+- Fail-Safe: A Snowflake feature, wheere expired data from time-travel is automatically moved to after expiration. The only way to access data within fail-safe is by contacting Snowflake support
 - Snowpipe: Enables data loading as soon as they're available
-- Time Travel: Data that is kept from 1-90 day periods
+- Time Travel: A Snowflake feature that stores expired data in 1-90 day periods (depending on Snowflake edition)
 - Virtual Warehouse: Cluster of compute resources that executes database queries and commands
