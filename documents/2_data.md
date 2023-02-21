@@ -1,7 +1,7 @@
 # Importing/Exporting Data
 ## Supported File Formats:
 - Avro
-- Delimited
+- Delimited (CSV, DSV, TSV)
 - JSON
 - ORC
 - Parquet
