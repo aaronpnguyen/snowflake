@@ -10,7 +10,7 @@
 ## Virtual Warehouse
 - Automatic Operation
     - Turn off when inactive
-    - Turn on when requireds
+    - Turn on when required
 - Operations:
     - SELECT
     - INSERT/UPDATE/DELETE/MERGE
