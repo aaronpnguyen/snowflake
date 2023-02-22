@@ -14,7 +14,7 @@
 - Virtual Warehouses
     - Anytime you are interacting with the data, you need a virtual warehouse setup
 - Snowpipe
-    - A Snowflake feature that imports data into Snowflake from external stages. Metadata of the files are stored in a table to keep track of processed data, ensuring that only new data is ingested.
+    - A Snowflake feature that imports data into Snowflake from external stages. Snowflake stores metadata in an internal table to keep track of processed data, ensuring that only new data is ingested
 
 ## Tools
 - Web Portal
